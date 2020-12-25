@@ -70,6 +70,7 @@ const MusicPlay = ( ) => {
                             {selectedSong[0].artistName}
                         </p>
                     </div>
+                    {/* <input type="file"  onChange={(e) => console.log(typeof e.target.files.file)}/> */}
                 </div>
                 <div className='songControllerContainer'>
                 />
