@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  background: rgb(200, 220, 231);
+  padding: 30px;
+  overflow-x: hidden;
+  font-family: "Amatic SC", cursive;
+}
+::selection {
+  background: rgb(200, 220, 231);
+}
+.logo-container {
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+.logo-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  cursor: pointer;
+}
+.musics-list-container {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid: 30;
+}
+.single-music {
+  width: 300px;
+  height: 230px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(223, 212, 212, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(40%);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  box-shadow: 1px 1px 30px 2px rgba(5, 5, 5, 0.3);
+}
+.music-image-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.music-content {
+  background: rgba(223, 212, 212, 0.2);
+  margin-top: 5px;
+  border-radius: 10px;
+  backdrop-filter: blur(40%);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  width: 85%;
+  box-shadow: 1px 1px 30px 2px rgba(5, 5, 5, 0.2);
+  text-align: left;
+  padding: 10px;
+  position: relative;
+  /* background: linear-gradient(
+    to right,
+    rgba(7, 7, 254, 0.7),
+    rgba(237, 0, 254, 0.7)
+  ); */
+}
+
+.music-content h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+}
+.music-content p {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: -10;
+  margin: 0;
+}
+.play-btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  background: rgb(200, 220, 231);
+  align-items: center;
+  box-shadow: 0px 0px 10px 0px rgba(140, 0, 255, 0);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.play-btn:hover {
+  box-shadow: 0px 0px 10px 0px rgba(183, 0, 255, 0.2);
+}
